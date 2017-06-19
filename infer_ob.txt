@@ -1,0 +1,43 @@
+#
+
+(a -> b)
+
+((a & ~c) -> ~b)
+
+((a & ~c & d) -> c)
+
+((a|b) -> c)
+
+(c -> d)
+
+w0: {a: False, b: False, c: False, d: False}, set(), 0.0
+
+w1: {a: False, b: False, c: False, d: True}, set(), 0.0
+
+w3: {a: False, b: False, c: True, d: True}, set(), 0.0
+
+w7: {a: False, b: True, c: True, d: True}, set(), 0.0
+
+w15: {a: True, b: True, c: True, d: True}, set(), 0.0
+
+w2: {a: False, b: False, c: True, d: False}, {'r4'}, 1.0
+
+w4: {a: False, b: True, c: False, d: False}, {'r3'}, 1.0
+
+w5: {a: False, b: True, c: False, d: True}, {'r3'}, 1.0
+
+w6: {a: False, b: True, c: True, d: False}, {'r4'}, 1.0
+
+w8: {a: True, b: False, c: False, d: False}, {'r3'}, 1.0
+
+w11: {a: True, b: False, c: True, d: True}, {'r0'}, 1.0
+
+w14: {a: True, b: True, c: True, d: False}, {'r4'}, 1.0
+
+w9: {a: True, b: False, c: False, d: True}, {'r3', 'r2'}, 2.0
+
+w10: {a: True, b: False, c: True, d: False}, {'r4', 'r0'}, 2.0
+
+w12: {a: True, b: True, c: False, d: False}, {'r3', 'r1'}, 2.0
+
+w13: {a: True, b: True, c: False, d: True}, {'r3', 'r2', 'r1'}, 3.0
